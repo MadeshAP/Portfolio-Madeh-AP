@@ -1294,3 +1294,132 @@ textarea {
     width: 100%;
   }
 }
+
+
+/* today */
+/* ================= MOBILE FIX (IMPORTANT) ================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR FIX */
+  nav .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  nav .navbar .logo a {
+    font-size: 22px;   /* reduce big title */
+  }
+
+  /* HOME SECTION FIX */
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .home .text-two {
+    font-size: 32px;   /* FIX big overlapping text */
+    line-height: 1.2;
+  }
+
+  .home .text-three {
+    font-size: 22px;
+  }
+
+  .home .text-four {
+    font-size: 16px;
+  }
+
+  /* FIX IMAGE */
+  .home-image img {
+    width: 220px;
+    margin: 20px auto;
+  }
+
+  /* SKILLS SECTION FIX */
+  .skills-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-details .boxes {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skills-details .box {
+    width: 100%;
+  }
+
+  .skills-details .boxes .per {
+    font-size: 40px;  /* reduce % size */
+  }
+
+  /* ABOUT SECTION */
+  .about-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-details .left img {
+    width: 200px;
+  }
+
+  /* BUTTON FIX */
+  .hire-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  /* GENERAL TEXT FIX */
+  h1, h2, h3 {
+    word-break: break-word;  /* FIX text overflow */
+  }
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .home .text-two {
+    font-size: 26px;
+  }
+
+  .home .text-three {
+    font-size: 18px;
+  }
+
+  .skills-details .boxes .per {
+    font-size: 35px;
+  }
+
+}
+
+.media-ic {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 42px;   /* 🔥 controls space between icons */
+}
+
+.media-ic a {
+  color: #4070f4;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+
+  .media-ic {
+    justify-content: center;   /* center icons */
+    flex-wrap: wrap;           /* wrap if needed */
+    gap: 25px;
+  }
+
+  .media-ic a {
+    font-size: 22px;           /* slightly bigger for touch */
+    margin-right: 0;           /* remove side spacing */
+  }
+
+}
